@@ -1,3 +1,6 @@
 [submodule "opsworks_custom_config"]
 	path = opsworks_custom_config
 	url = https://github.com/LevelSeven/opsworks_custom_config.git
+[submodule "opsworks_custom_env"]
+	path = opsworks_custom_env
+	url = https://github.com/LevelSeven/opsworks_custom_env.git
