@@ -4,3 +4,6 @@
 [submodule "opsworks_custom_env"]
 	path = opsworks_custom_env
 	url = https://github.com/LevelSeven/opsworks_custom_env.git
+[submodule "opsworks_www_redirect"]
+	path = opsworks_www_redirect
+	url = https://github.com/LevelSeven/opsworks_www_redirect.git
