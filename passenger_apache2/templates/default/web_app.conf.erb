@@ -54,10 +54,8 @@
   <% end -%>
 
   # Canonical host
-  <% if @params[:rails_env] == "production" %>
     RewriteCond %{HTTP_HOST} ^<%= @params[:server_name] %>$
     RewriteRule (.*) http://www.<%= @params[:server_name] %>/$1 [R=301,L] 
-  <% end %>
 
   RewriteCond %{REQUEST_URI} !\.(css|gif|jpg|jpeg|png)$
   RewriteCond %{DOCUMENT_ROOT}/system/maintenance.html -f
@@ -136,9 +134,8 @@
   <% end -%>
 
   # Canonical host
-  #RewriteCond %{HTTP_HOST}   !^<%= @params[:server_name] %> [NC]
-  #RewriteCond %{HTTP_HOST}   !^$
-  #RewriteRule ^/(.*)$        http://<%= @params[:server_name] %>/$1 [L,R=301]
+    RewriteCond %{HTTP_HOST} ^<%= @params[:server_name] %>$
+    RewriteRule (.*) http://www.<%= @params[:server_name] %>/$1 [R=301,L] 
 
   RewriteCond %{REQUEST_URI} !\.(css|gif|jpg|jpeg|png)$
   RewriteCond %{DOCUMENT_ROOT}/system/maintenance.html -f
