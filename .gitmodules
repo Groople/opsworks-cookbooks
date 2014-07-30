@@ -4,3 +4,6 @@
 [submodule "opsworks_custom_env"]
 	path = opsworks_custom_env
 	url = https://github.com/LevelSeven/opsworks_custom_env.git
+[submodule "import_ean_data"]
+	path = import_ean_data
+	url = https://github.com/Groople/import_ean_data.git
